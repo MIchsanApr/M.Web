@@ -221,9 +221,9 @@
     .detail-mode #detail-panel {
       opacity: 1 !important;
       pointer-events: auto !important;
-      right: 4.5rem !important;
-      width: 90% !important;
-      max-width: 1200px !important;
+      right: 2rem !important;
+      width: 60% !important;
+      max-width: 900px !important;
       height: 70%;
       overflow-y: auto;
     }
@@ -314,19 +314,7 @@
      <nav class="flex items-center gap-8"><button id="sound-toggle" class="sound-toggle" aria-label="Toggle Sound">
   🔊
 </button>
-<script>
- let buffer = '';
 
-document.addEventListener('keydown', (e) => {
-  buffer += e.key.toLowerCase();
-  buffer = buffer.slice(-4); // panjang kata "wowo"
-
-  if (buffer === 'wowo') {
-    window.location.href = 'dominatorslaptop.html';
-  }
-});
-
-</script>
 <audio id="bg-music" src="Inst.mp3" loop></audio>
 <style>.sound-toggle {
   position: fixed;
