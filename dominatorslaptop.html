@@ -452,34 +452,40 @@
       <p id="char-lore" class="text-sm text-gray-400 leading-relaxed mb-6"></p><!-- Stats -->
       <div class="space-y-3 mb-6">
        <div class="stat-row">
-        <div class="flex justify-between items-center mb-1"><span class="text-xs text-gray-500 tracking-wider">STRENGTH</span> <span id="stat-str" class="font-orbitron text-xs text-cyan-400"></span>
+        <div class="flex justify-between items-center mb-1"><span class="text-xs text-gray-500 tracking-wider"><img src="icons/strength.png" class="emoji"> STRENGTH</span> <span id="stat-str" class="font-orbitron text-xs text-red-400"></span>
         </div>
         <div class="h-1 bg-gray-800 rounded overflow-hidden">
-         <div id="bar-str" class="stat-bar h-full rounded transition-all duration-500" style="--stat-color: #00ffc8;"></div>
+         <div id="bar-str" class="stat-bar h-full rounded transition-all duration-500" style="--stat-color: #e03c3c;"></div>
         </div>
        </div>
        <div class="stat-row">
-        <div class="flex justify-between items-center mb-1"><span class="text-xs text-gray-500 tracking-wider">AGILITY</span> <span id="stat-agi" class="font-orbitron text-xs text-purple-400"></span>
+        <div class="flex justify-between items-center mb-1"><span class="text-xs text-gray-500 tracking-wider"><img src="icons/agility.png" class="emoji"> MOBILITY</span> <span id="stat-agi" class="font-orbitron text-xs text-purple-400"></span>
         </div>
         <div class="h-1 bg-gray-800 rounded overflow-hidden">
-         <div id="bar-agi" class="stat-bar h-full rounded transition-all duration-500" style="--stat-color: #a855f7;"></div>
+         <div id="bar-agi" class="stat-bar h-full rounded transition-all duration-500" style="--stat-color: #f755ea;"></div>
         </div>
        </div>
        <div class="stat-row">
-        <div class="flex justify-between items-center mb-1"><span class="text-xs text-gray-500 tracking-wider">POWER</span> <span id="stat-pow" class="font-orbitron text-xs text-orange-400"></span>
+        <div class="flex justify-between items-center mb-1"><span class="text-xs text-gray-500 tracking-wider"><img src="icons/will.png" class="emoji"> WILLPOWER</span> <span id="stat-pow" class="font-orbitron text-xs text-green-400"></span>
         </div>
         <div class="h-1 bg-gray-800 rounded overflow-hidden">
-         <div id="bar-pow" class="stat-bar h-full rounded transition-all duration-500" style="--stat-color: #f97316;"></div>
+         <div id="bar-pow" class="stat-bar h-full rounded transition-all duration-500" style="--stat-color: #2fb32f;"></div>
         </div>
        </div>
        <div class="stat-row">
-        <div class="flex justify-between items-center mb-1"><span class="text-xs text-gray-500 tracking-wider">INTELLIGENCE</span> <span id="stat-int" class="font-orbitron text-xs text-blue-400"></span>
+        <div class="flex justify-between items-center mb-1"><span class="text-xs text-gray-500 tracking-wider"><img src="icons/toughness.png" class="emoji"> TOUGHNESS</span> <span id="stat-int" class="font-orbitron text-xs text-blue-400"></span>
         </div>
         <div class="h-1 bg-gray-800 rounded overflow-hidden">
-         <div id="bar-int" class="stat-bar h-full rounded transition-all duration-500" style="--stat-color: #3b82f6;"></div>
+         <div id="bar-int" class="stat-bar h-full rounded transition-all duration-500" style="--stat-color: #73a1eb;"></div>
         </div>
        </div>
-      </div><!-- Special Ability -->
+      </div><style>.emoji {
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+  display: inline-block;
+}
+</style><!-- Special Ability -->
       <div class="mb-4 p-4 bg-gradient-to-r from-cyan-500/10 to-transparent border-l-2 border-cyan-500 flex items-start gap-3">
   <div id="ability-icon" class="w-10 h-10 flex-shrink-0"></div>
   <div>
@@ -515,7 +521,7 @@
         level: 8,
         maxLevel: 20,
         lore: 'A powerful biomechanoid rebuilt with a crystal core, designed to protect and dominate battle zones.',
-        stats: { str: 95, agi: 40, pow: 90, int: 60 },
+        stats: { str: 95, agi: 40, pow: 70, int: 99 },
         ability: 'CRYSTAL WAVE',
         abilityDesc: 'Releases a wide energy pulse that disrupts enemies and protects allies',
         abilityIcon: 'icons/crystal.png',
@@ -535,7 +541,7 @@
         level: 12,
         maxLevel: 20,
         lore: 'A shapeshifting EB-999 with unmatched adaptability and battlefield control.',
-        stats: { str: 88, agi: 95, pow: 92, int: 70 },
+        stats: { str: 88, agi: 95, pow: 82, int: 80 },
         ability: 'FLOW DOMAIN',
         abilityDesc: 'Spreads liquid energy across the field, slowing enemies and boosting allies',
         abilityIcon: 'icons/Gravity.png',
@@ -554,7 +560,7 @@
         level: 10,
         maxLevel: 20,
         lore: 'An experimental biomechanoid with octopus DNA, excelling in control and strategy.',
-        stats: { str: 75, agi: 85, pow: 80, int: 90 },
+        stats: { str: 75, agi: 85, pow: 80, int: 70 },
         ability: 'TENTACLE FIELD',
         abilityDesc: 'Summons energy tendrils that immobilize and weaken enemies in a wide area',
         abilityIcon: 'icons/tentacle.png',
@@ -573,7 +579,7 @@
         level: 15,
         maxLevel: 20,
         lore: 'A master tactician who controls the battlefield with precision and planning.',
-        stats: { str: 70, agi: 65, pow: 85, int: 95 },
+        stats: { str: 80, agi: 65, pow: 80, int: 95 },
         ability: 'TACTICAL ZONE',
         abilityDesc: 'Creates a field that lowers enemy effectiveness and boosts ally coordination',
         abilityIcon: 'icons/tactic.png',
@@ -592,7 +598,7 @@
         level: 14,
         maxLevel: 20,
         lore: 'A radiant warrior who channels solar energy to support and control large areas.',
-        stats: { str: 80, agi: 55, pow: 100, int: 65 },
+        stats: { str: 80, agi: 55, pow: 90, int: 95 },
         ability: 'SOLAR FIELD',
         abilityDesc: 'Emits a powerful wave of light energy that stabilizes allies and disrupts enemies',
         abilityIcon: 'icons/solar.png',
@@ -611,7 +617,7 @@
         level: 9,
         maxLevel: 20,
         lore: 'A biomechanoid bonded with cherry blossom DNA, combining elegance with battlefield support.',
-        stats: { str: 60, agi: 90, pow: 75, int: 85 },
+        stats: { str: 60, agi: 90, pow: 95, int: 65 },
         ability: 'PETAL AURA',
         abilityDesc: 'Releases energy petals that protect allies and weaken enemies in range',
         abilityIcon: 'icons/petal.png',
@@ -630,7 +636,7 @@
         level: 7,
         maxLevel: 20,
         lore: 'A fast and clever fighter who excels in team coordination.',
-        stats: { str: 65, agi: 80, pow: 70, int: 75 },
+        stats: { str: 75, agi: 96, pow: 85, int: 75 },
         ability: 'FLASH SUPPORT',
         abilityDesc: 'Fires energy bursts that assist allies and disorient enemies',
         abilityIcon: 'icons/runner.png',
@@ -649,7 +655,7 @@
         level: 11,
         maxLevel: 20,
         lore: 'A silent strategist who controls space through movement and positioning.',
-        stats: { str: 70, agi: 95, pow: 78, int: 85 },
+        stats: { str: 70, agi: 95, pow: 88, int: 80 },
         ability: 'BLACKOUT FIELD',
         abilityDesc: 'Creates a shadow zone that reduces enemy accuracy and boosts ally evasion',
         abilityIcon: 'icons/blackout.png',
@@ -668,7 +674,7 @@
         level: 6,
         maxLevel: 20,
         lore: 'A high-speed unit specializing in area control and mobility.',
-        stats: { str: 85, agi: 88, pow: 82, int: 60 },
+        stats: { str: 85, agi: 88, pow: 82, int: 80 },
         ability: 'PLASMA DASH',
         abilityDesc: 'Moves rapidly across the field, leaving energy trails that slow enemies',
         abilityIcon: 'icons/plasmarun.png',
@@ -687,7 +693,7 @@
   level: 11,
   maxLevel: 20,
   lore: 'A raw power monster with extreme stamina limits. Dominates fights through brute force, pain tolerance, and sheer will.',
-  stats: { str: 98, agi: 55, pow: 95, int: 45 },
+  stats: { str: 95, agi: 60, pow: 50, int: 90 },
   ability: 'BREAK LIMIT',
   abilityDesc: 'Temporarily boosts strength and power to insane levels, but drains stamina rapidly after use.',
   abilityIcon: 'icons/limit.png',
@@ -705,7 +711,7 @@
   level: 9,
   maxLevel: 20,
   lore: 'A hyper-aware tactician with extreme sensory perception. Can weaponize the smallest details in the environment to dominate enemies.',
-  stats: { str: 45, agi: 70, pow: 60, int: 98 },
+  stats: { str: 70, agi: 85, pow: 90, int: 65 },
   ability: 'FREQUENCY LOCK',
   abilityDesc: 'Detects and manipulates enemy movements by locking onto their heartbeat, footsteps, and weapon vibrations.',
   abilityIcon: 'icons/focus.png',
