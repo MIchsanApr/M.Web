@@ -386,7 +386,7 @@ document.addEventListener('keydown', (e) => {
       isPlaying = false;
     }
   });
-</script><button class="nav-item font-orbitron text-sm tracking-wider text-gray-500 hover:text-gray-300 transition-colors px-2 py-1" onmouseenter="playSound('hover')"><a href="play.html">PLAY</a></button><!-- <button class="nav-item font-orbitron text-sm tracking-wider text-gray-500 hover:text-gray-300 transition-colors px-2 py-1" onmouseenter="playSound('hover')"><a href="decks.html">DECKS</a></button> <button class="nav-item font-orbitron text-sm tracking-wider text-gray-500 hover:text-gray-300 transition-colors px-2 py-1" onmouseenter="playSound('hover')"><a href="armory.html">ARMORY</a></button>--> <button class="nav-item active font-orbitron text-sm tracking-wider text-white transition-colors px-2 py-1"><a href="dominators.html">DOMINATORS</a></button>
+</script><button class="nav-item font-orbitron text-sm tracking-wider text-gray-500 hover:text-gray-300 transition-colors px-2 py-1" onmouseenter="playSound('hover')"><a href="play.html">PLAY</a></button><!-- <button class="nav-item font-orbitron text-sm tracking-wider text-gray-500 hover:text-gray-300 transition-colors px-2 py-1" onmouseenter="playSound('hover')"><a href="decks.html">DECKS</a></button> <button class="nav-item font-orbitron text-sm tracking-wider text-gray-500 hover:text-gray-300 transition-colors px-2 py-1" onmouseenter="playSound('hover')"><a href="armory.html">ARMORY</a></button>--> <button class="nav-item active font-orbitron text-sm tracking-wider text-white transition-colors px-2 py-1"><a href="dominators.html">DOMINATORS</a></button><button class="nav-item font-orbitron text-sm tracking-wider text-gray-500 hover:text-gray-300 transition-colors px-2 py-1" onmouseenter="playSound('hover')"><a href="shp/shop.html">ARMORY</a></button>
      </nav><!-- Player Info -->
      <div class="flex items-center gap-4">
       <div class="flex items-center gap-2 px-4 py-2 bg-gray-900/50 border border-gray-800 rounded">
@@ -769,7 +769,47 @@ document.addEventListener('keydown', (e) => {
         weapons: ['Gravity Hammer', 'Mass Manipulator', 'Singularity Core'],
         unlocks: ['Black Hole: LVL 15', 'Anti-Gravity: LVL 17', 'Void Master: LVL 19'],
         image: 'locked.jpg'
-      }
+      },{
+  id: 'nyxara',
+  designation: 'PLUS-EXCLUSIVE',
+  name: '< LOCKED ! >',
+  subtitle: 'Requires Ashes of Vengeance: PLUS Edition.',
+  level: 0,
+  maxLevel: 20,
+  lore: 'Nyxara is the fallen empress of a star empire erased from existence. Her throne now drifts through the void, and her body is formed from collapsed starlight. Those who face her feel gravity bend around her will, as if the universe itself bows. Only PLUS operatives are granted access to her sealed form.',
+  stats: { str: 0, agi: 0, pow: 0, int: 0 },
+  ability: '???',
+  abilityDesc: 'Unlock by upgrading to PLUS Edition.',
+  abilityIcon: 'icons/locked_plus.png',
+  color: '#6366f1',
+  faction: 'Astral Dominion',
+  combatRole: 'Void Empress',
+  weapons: ['Starlight Scepter', 'Graviton Veil', 'Nova Crown'],
+  unlocks: ['Star Collapse: LVL 15', 'Void Ascension: LVL 17', 'Celestial Dominion: LVL 19'],
+  image: 'limited.png',
+  requiresPlus: true
+},{
+  id: 'virex',
+  designation: 'PLUS-EXCLUSIVE',
+  name: '< LOCKED ! >',
+  subtitle: 'Requires Ashes of Vengeance: PLUS Edition.',
+  level: 0,
+  maxLevel: 20,
+  lore: 'Virex is not a being, but a surviving signal from a war that fractured reality. His form glitches between timelines, striking from places that should not exist. Enemies never see him coming—only the static left behind. His access is restricted to PLUS operatives only.',
+  stats: { str: 0, agi: 0, pow: 0, int: 0 },
+  ability: '???',
+  abilityDesc: 'Unlock by upgrading to PLUS Edition.',
+  abilityIcon: 'icons/locked_plus.png',
+  color: '#22d3ee',
+  faction: 'Null Protocol',
+  combatRole: 'Void Assassin',
+  weapons: ['Phase Blades', 'Signal Breaker', 'Chrono Disruptor'],
+  unlocks: ['Reality Slice: LVL 15', 'Phase Overdrive: LVL 17', 'Zero Frame: LVL 19'],
+  image: 'limited.png',
+  requiresPlus: true
+}
+
+
 
     ];
 
